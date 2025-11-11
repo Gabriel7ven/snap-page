@@ -8,7 +8,7 @@
 
 
 
-body{
+*, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +23,10 @@ header {
   padding: 20px;
   align-items: center;  
   justify-content: space-between;
+}
+
+.header-icons {
+  margin-right: 20px;
 }
 
 #win-shadowed {
@@ -84,7 +88,7 @@ p {
     transform: translateX(-30%);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 50px 5px rgba(173, 173, 177, 0.603);
+    /* box-shadow: 0 0 50px 5px rgba(173, 173, 177, 0.603); */
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -127,21 +131,21 @@ nav > ul {
     margin-left: 10px;
 }
 
+/* ========================================================= */
+
+
+
+
+
 
 .container {
     display: flex;
     min-width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    /* background-color: orange; */
-    /* justify-content: center;
-    align-items: center; */
 }
 
 main {
-    /* background-color: rgb(182, 147, 83); */
-    /* width: 70%;
-    height: 80%; */
     max-width: 900px;
     min-width: 800px;
     height: 500px;
@@ -156,13 +160,18 @@ main {
     width: 50%;
     /* background-color: aqua; */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .content a {
     background-color: var(--gray-high);
     color: var(--gray-low);
-    padding: 10px 20px;
+    padding: 15px 15px;
     border-radius: 10px;
+    width: 150px;
+    text-align: center;
 }
 
 .content a:hover{
@@ -175,12 +184,16 @@ main {
 
 .content p {
     line-height: 1.5rem;
-    margin: 50px 0 70px 0;
+    /* margin: 50px 0 70px 0; */
 }
 h1 {
     font-weight: 700;
     font-size: 4em;
-    margin: 50px 0 0 0;
+    margin-top: 40px
+}
+
+#remote-work{
+  display: block;
 }
 
 
@@ -197,18 +210,42 @@ h1 {
 }
 
 .logos {
-    background-color: blue;
-    /* position: absolute; */
     display:flex;
     justify-content: space-between;
-    align-items: center;
-    
-    bottom: 0;
+    align-items: flex-end;
     width: 100%;
+    height: 100%;
+    /* background-color: orange; */
 }
 
 
-@media screen and (min-width: 381px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 376px) {
   .header-right {
     display: flex !important;
   }
@@ -217,13 +254,15 @@ h1 {
  }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
   body {
     position: relative;
     box-sizing: border-box;
   }
   header {
     min-width: 100%;
+    /* background-color: orange; */
+    padding: 20px 0 20px 12px;
   }
 
   .header-right {
@@ -285,6 +324,7 @@ h1 {
 
   #hamburguer-menu {
     display: block;
+    /* background-color: turquoise; */
   }
 
   #register {
@@ -304,31 +344,38 @@ h1 {
     align-self: start;
   }
 
+
+  /* ========================================  */
   main {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   
   .content {
     order: 1;
-    width: 350px;
-    /* text-align: center; */
-    background-color: turquoise;
+    width: 100%;
+
+    /* background-color: turquoise; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
   
   h1 {
     font-weight: 700;
     font-size: 2rem;
     /* margin: 50px 0 0 0; */
+  }
+  #remote-work{
+    display: inline-block;
   }
   
   .content p {
@@ -339,7 +386,9 @@ h1 {
 
   .content  a {
     background-color: var(--gray-high);
-    width: 100px;
+    width: 150px;
+    margin-bottom: 30px ;
+    transform: translateY(-20px);
   }
 
   
@@ -347,6 +396,7 @@ h1 {
     display: block;
     width: 100%;
     height: auto;
+    /* background-color: rgb(255, 228, 196, 0.8); */
   }
 
   .hero-img-desktop {
