@@ -208,7 +208,7 @@ h1 {
 }
 
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 381px) {
   .header-right {
     display: flex !important;
   }
@@ -217,7 +217,7 @@ h1 {
  }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   body {
     position: relative;
     box-sizing: border-box;
