@@ -18,6 +18,7 @@ body{
 header {
   display: flex;
   width: 100%;
+  min-width: 850px;
   box-sizing: border-box;
   padding: 20px;
   align-items: center;        /* alinha verticalmente */
@@ -34,7 +35,7 @@ header {
 }
 
 .header-right {
-  display: flex;
+  /* display: flex !important; */
   align-items: center;
   justify-content: space-between;
   /* background-color: orange; */
@@ -119,9 +120,7 @@ nav > ul {
 
 }
 
-header {
-  min-width: 850px;
-}
+
 
 #auth {
     display: flex;
@@ -211,20 +210,24 @@ h1 {
 }
 
 
-/* @media screen and (min-width: 376px) {
+@media screen and (min-width: 376px) {
   .header-right {
     display: flex !important;
   }
-} */
+  #hamburguer-menu {
+    display: none !important;
+ }
+}
 
 @media screen and (max-width: 375px) {
   body {
     position: relative;
     box-sizing: border-box;
   }
-  /* header {
-    background-color: orange;
-  } */
+  header {
+
+    min-width: 100%;
+  }
 
   .header-right {
     display: none;
@@ -307,29 +310,38 @@ h1 {
   }
 
   main {
-    display: grid;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
     height: 100%;
     box-sizing: border-box;
+    /* background-color: aqua; */
   }
   
   .content {
     order: 1;
     width: 350px;
-    text-align: center;
+    /* text-align: center; */
+    /* background-color: turquoise; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   h1 {
     font-weight: 700;
     font-size: 2rem;
-    margin: 50px 0 0 0;
-    text-align: center;
+    /* margin: 50px 0 0 0; */
   }
   
-  p {
+  .content p {
+    line-height: 1.5rem;
+    margin: 50px 0 50px 0;
     text-align: center;
   }
-  
+
   .content  a {
     background-color: var(--gray-high);
     width: 100px;
@@ -338,7 +350,7 @@ h1 {
   
   .hero-img-mobile {
     display: block;
-    width: 375px;
+    width: 100%;
     height: auto;
   }
 
@@ -351,7 +363,7 @@ h1 {
   }
 
   .logos img {
-    width: 20%;
+    width: 18%;
   }
 
 }

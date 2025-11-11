@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showMenu(){
-        document.querySelector(".header-right").style.display = "block";
+        document.querySelector(".header-right").style.display = "flex";
         winShadowed.style.display = "block"
     }
 
