@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="index.js"></script>
+</head>
+<body>
+   <div id="win-shadowed"></div>
+   <div id="teste"></div>
+   <header>
+      <div class="header-icons">
+        <img id="logo" src="images/logo.svg" alt="Logo">
+        
+        <img id="hamburguer-menu" src="images/icon-menu.svg" alt="Hamburguer Icon">
+      </div>
+
+    <div class="header-right">
+      <img id="close-menu" src="images/icon-close-menu.svg">
+      <nav class="navbar">
+        <ul>
+          <li id="features"><a href="#">Features</a>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="Arrow Down">
+            <ul class="hidden" id="dropdown">
+              <li><a href="./teste.html"><img src="images/icon-todo.svg">Todo List</a></li>
+              <li><a href="#"><img src="images/icon-calendar.svg">Calendar</a></li>
+              <li><a href="#"><img src="images/icon-reminders.svg">Reminders</a></li>
+              <li><a href="#"><img src="images/icon-planning.svg">Planning</a></li>
+            </ul>
+          </li>
+          <li id="company"><a href="#">Company</a>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="Arrow Down">
+            <ul class="hidden">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    
+    <div id="auth">
+      <a href="#" id="login">Login</a>
+      <a href="#" id="register">Register</a>
+    </div>
+    </div>
+  </header>
+  <div class="container"> 
+    <main>
+        <div class="content">
+
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+          <a href="#">Learn more</a>
+          <div class="logos">
+            <img src="images/client-databiz.svg" alt="Databiz Image">
+            <img src="images/client-audiophile.svg" alt="Audiophile Image">
+            <img src="images/client-meet.svg" alt="Meet Image">
+            <img src="images/client-maker.svg" alt="Maker Image">
+          </div>
+        </div>
+        
+        <div id="hero-img">
+          <img class="hero-img-mobile" src="images/image-hero-mobile.png" alt="Hero Image">
+          <img class="hero-img-desktop" src="images/image-hero-desktop.png" alg="Hero Image">
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

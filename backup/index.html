@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="index.js"></script>
+</head>
+<body>
+   <div id="teste"></div>
+   <header>
+    <div class="header-left">
+      <div>
+        <img id="logo" src="images/logo.svg" alt="Logo">
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li id="features">Features
+            <ul class="shown" id="dropdown">
+              <li><a href="./teste.html"><img src="images\icon-todo.svg">Todo List</a></li>
+              <li><a href="#"><img src="images\icon-calendar.svg">Calendar</a></li>
+              <li><a href="#"><img src="images\icon-reminders.svg">Reminders</a></li>
+              <li><a href="#"><img src="images\icon-planning.svg">Planning</a></li>
+            </ul>
+            <img class="arrow-down" src="images/icon-arrow-down.svg" alt="Arrow Down">
+          </li>
+          <li id="company">Company
+            <ul class="hidden">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <img class="arrow-down" src="images/icon-arrow-down.svg" alt="Arrow Down">
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div id="auth">
+        <a href="#" id="login">Login</a>
+        <a href="#" id="register">Register</a>
+      </div>
+  </header>
+  <div class="container"> 
+    <main>
+        <div class="content">
+        <!-- <div class="content"> -->
+          <h1>Make <br> remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+          <a href="#">Learn more</a>
+          <div class="logos">
+            <img src="images\client-databiz.svg" alt="Databiz Image">
+            <img src="images\client-audiophile.svg" alt="Audiophile Image">
+            <img src="images\client-meet.svg" alt="Meet Image">
+            <img src="images\client-maker.svg" alt="Maker Image">
+          </div>
+        </div>
+        
+        <div id="hero-img">
+          <img src="images/image-hero-desktop.png" alt="Hero Image">
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
