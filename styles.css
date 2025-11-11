@@ -245,7 +245,7 @@ h1 {
 
 
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 401px) {
   .header-right {
     display: flex !important;
   }
@@ -254,7 +254,7 @@ h1 {
  }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   body {
     position: relative;
     box-sizing: border-box;
@@ -269,7 +269,7 @@ h1 {
     display: none;
     position: fixed;
     background-color: var(--gray-low);
-    width: 200px;
+    width: 250px;
     height: 100vh;
     right: 0;
     top: 0;
