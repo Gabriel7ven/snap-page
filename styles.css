@@ -97,6 +97,9 @@ p {
     z-index: 5;
 } 
 
+.shown a:hover{
+  text-shadow: 2px 2px 2px rgba(89, 89, 89, 0.50);
+}
 li  img {
     margin-right: 10px;
 }
