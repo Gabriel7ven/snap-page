@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-
     let features = document.getElementById("features") // LI
     let company = document.getElementById("company")   // LI
     let closeMenu = document.getElementById("close-menu")
@@ -18,6 +17,20 @@ document.addEventListener("DOMContentLoaded", () => {
             hideAll(features.firstChild) // A
         }
     })
+
+
+    function showHide(event){
+        let element = event.target
+        if(searchElement(element, "hidden")){
+            hideAll(element)
+            searchElement(element, "hidden").setAttribute("class", "shown")
+            searchElement(element,"arrow").setAttribute("src", "images/icon-arrow-up.svg")
+        }else if(searchElement(element, "shown")){
+            searchElement(element, "shown").setAttribute("class", "hidden")
+            searchElement(element,"arrow").setAttribute("src", "images/icon-arrow-down.svg")
+        }
+    }
+
 
 
     function hideMenu(){
@@ -60,23 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         return false
     }
-
-
-
-// ----------------------------------------------------------
-    function showHide(event){
-        let element = event.target
-        if(searchElement(element, "hidden")){
-            hideAll(element)
-            searchElement(element, "hidden").setAttribute("class", "shown")
-            searchElement(element,"arrow").setAttribute("src", "images/icon-arrow-up.svg")
-        }else if(searchElement(element, "shown")){
-            searchElement(element, "shown").setAttribute("class", "hidden")
-            searchElement(element,"arrow").setAttribute("src", "images/icon-arrow-down.svg")
-        }
-    }
-    
-
 
 
 })
