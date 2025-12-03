@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
- 
+
     function showHide(event){
         let element = event.target
         if(searchElement(element, "hidden")){
