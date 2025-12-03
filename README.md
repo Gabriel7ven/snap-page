@@ -58,9 +58,7 @@ During this project, I strengthened my skills in:
 
 Areas I want to continue focusing on:
 
-- Accessibility improvements (ARIA labels and keyboard navigation)
-- Performance optimization for larger projects
-- CSS animations and transitions for smoother interactions
+- CSS transitions for smoother interactions
 - Testing strategies for interactive components
 - Utilization of React framework and Tailwind CSS
 
